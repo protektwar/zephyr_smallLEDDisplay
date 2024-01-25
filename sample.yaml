@@ -1,0 +1,9 @@
+sample:
+  description: WS2812 LED Display Matrix
+  name: small LED Display Matrix 
+tests:
+  smallLEDDisplay:
+    tags: LED 
+    filter: dt_compat_enabled("worldsemi,ws2812-spi")
+    harness_config:
+      fixture: fixture_led_ws2812
